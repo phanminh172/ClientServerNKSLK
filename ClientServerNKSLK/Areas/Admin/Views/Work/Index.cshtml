@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div id="content" class="container-fluid">
+    <div class="card">
+        <div class="card-header font-weight-bold d-flex justify-content-between align-items-center"
+             style="box-sizing: border-box">
+            <h5 class="m-0 ">Danh sách công việc</h5>
+            <div class="form-inline">
+                <form action="">
+                    <input type="" class="form-control form-search" name="keyword" autocomplete="off"
+                           placeholder="Nhập tên công việc ...">
+                    <button type="submit" class="btn btn-success">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="analytic">
+                <a href="">Tất cả (100)</a>
+                <a href="">Làm chung (100)</a>
+                <a href="">Làm riêng (100)</a>
+            </div>
+            <table class="table table-striped table-checkall">
+                <thead>
+                    <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Tên công việc</th>
+                        <th scope="col">Sản lượng thực tế</th>
+                        <th scope="col">Số lô sản phẩm</th>
+                        <th scope="col">Sản phẩm</th>
+                        <th scope="col">Tác vụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>Đóng gói</td>
+                        <td>100</td>
+                        <td>1</td>
+                        <td>Mỳ tôm</td>
+                        <td>
+                            <a href="" class="btn btn-success btn-sm rounded-0 text-white" type="button"
+                               data-toggle="tooltip" data-placement="top" title="Chỉnh sửa">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <a href="" class="btn btn-danger btn-sm rounded-0 text-white" type="button"
+                               data-toggle="modal" data-placement="top" title="Xóa">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">2</td>
+                        <td>Đóng gói</td>
+                        <td>100</td>
+                        <td>1</td>
+                        <td>Mỳ tôm</td>
+                        <td>
+                            <a href="" class="btn btn-success btn-sm rounded-0 text-white" type="button"
+                               data-toggle="tooltip" data-placement="top" title="Chỉnh sửa">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <a href="" class="btn btn-danger btn-sm rounded-0 text-white" type="button"
+                               data-toggle="modal" data-placement="top" title="Xóa">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">3</td>
+                        <td>Đóng gói</td>
+                        <td>100</td>
+                        <td>1</td>
+                        <td>Mỳ tôm</td>
+                        <td>
+                            <a href="" class="btn btn-success btn-sm rounded-0 text-white" type="button"
+                               data-toggle="tooltip" data-placement="top" title="Chỉnh sửa">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <a href="" class="btn btn-danger btn-sm rounded-0 text-white" type="button"
+                               data-toggle="modal" data-placement="top" title="Xóa">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
