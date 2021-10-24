@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" type="image/ico" href="~/Assets/Admin/img/ismart.ico" />
+    <link rel="shortcut icon" type="image/ico" href="img/ismart.ico" />
     {{-- Style --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -55,16 +55,16 @@
         <div id="page-body" class="d-flex">
             <div id="sidebar" class="bg-white">
                 <ul id="sidebar-menu">
-                    <li class="nav-link active">
-                        <a href="dashboard.html">
+                    <li class="nav-link">
+                        <a href="~/Admin/Home/Index">
                             <div class="nav-link-icon d-inline-flex">
                                 <i class="fa fa-home"></i>
                             </div>
                             Dashboard
                         </a>
                     </li>
-                    <li class="nav-link">
-                        <a href="diary.html">
+                    <li class="nav-link active">
+                        <a href="~/Admin/Diary/Index">
                             <div class="nav-link-icon d-inline-flex">
                                 <i class="fas fa-edit"></i>
                             </div>
@@ -73,7 +73,7 @@
                         <i class="arrow fas fa-angle-right"></i>
                         <ul class="sub-menu">
                             <li><a href="newDiary.html">Thêm mới</a></li>
-                            <li><a href="diary.html">Danh sách</a></li>
+                            <li><a href="~/Admin/Diary/Index">Danh sách</a></li>
                         </ul>
                     </li>
                     <li class="nav-link">
@@ -86,7 +86,7 @@
                         <i class="arrow fas fa-angle-right"></i>
                         <ul class="sub-menu">
                             <li><a href="">Thêm mới</a></li>
-                            <li><a href="">Danh sách</a></li>
+                            <li><a href="~/Admin/Work/Index">Danh sách</a></li>
                         </ul>
                     </li>
                     <li class="nav-link">
@@ -99,7 +99,7 @@
                         <i class="arrow fas fa-angle-right"></i>
                         <ul class="sub-menu">
                             <li><a href="">Thêm mới</a></li>
-                            <li><a href="">Danh sách</a></li>
+                            <li><a href="~/Admin/Product/Index">Danh sách</a></li>
                         </ul>
                     </li>
                     <li class="nav-link">
@@ -112,7 +112,7 @@
                         <i class="arrow fas fa-angle-right"></i>
                         <ul class="sub-menu">
                             <li><a href="">Thêm mới</a></li>
-                            <li><a href="">Danh sách</a></li>
+                            <li><a href="~/Admin/Employee/Index">Danh sách</a></li>
                         </ul>
                     </li>
                     <li class="nav-link">
@@ -130,12 +130,12 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- Toastr thư viện thông báo  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="~/Assets/Admin/app.js"></script>
 </body>
 
 </html>
