@@ -6,15 +6,10 @@ using System.Web.Mvc;
 
 namespace ClientServerNKSLK.Areas.Admin.Controllers
 {
-    public class DiaryController : Controller
+    public class LoginController : Controller
     {
-        // GET: Admin/Diary
+        // GET: Admin/Login
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult Detail()
         {
             return View();
         }

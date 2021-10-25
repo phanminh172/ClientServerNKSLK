@@ -124,8 +124,10 @@
     <Compile Include="Areas\Admin\Controllers\DiaryController.cs" />
     <Compile Include="Areas\Admin\Controllers\EmployeeController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\WorkController.cs" />
+    <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -134,7 +136,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Admin\app.js" />
+    <Content Include="Assets\Admin\css\styles.css" />
     <Content Include="Assets\Admin\img\ismart.ico" />
+    <Content Include="Assets\Admin\js\datatables-simple-demo.js" />
+    <Content Include="Assets\Admin\js\scripts.js" />
     <Content Include="Assets\Admin\style.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -154,6 +159,8 @@
     <Content Include="Areas\Admin\Views\Employee\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Work\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Diary\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Diary\Detail.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
