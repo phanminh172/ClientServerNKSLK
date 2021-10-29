@@ -53,15 +53,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientServerDbContext.cs" />
-    <Compile Include="DanhMucCongNhanThucHienKhoan.cs" />
-    <Compile Include="DanhMucCongViec.cs" />
-    <Compile Include="DanhMucCongViecDaLam.cs" />
-    <Compile Include="NhatKiSanLuongKhoan.cs" />
+    <Compile Include="EntityFramework\ClientServerDbContext.cs" />
+    <Compile Include="EntityFramework\DanhMucCongNhanThucHienKhoan.cs" />
+    <Compile Include="EntityFramework\DanhMucCongViec.cs" />
+    <Compile Include="EntityFramework\DanhMucCongViecDaLam.cs" />
+    <Compile Include="EntityFramework\NhatKiSanLuongKhoan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sysdiagram.cs" />
-    <Compile Include="ThongTinCongNhan.cs" />
-    <Compile Include="ThongTinSanPham.cs" />
+    <Compile Include="EntityFramework\sysdiagram.cs" />
+    <Compile Include="EntityFramework\ThongTinCongNhan.cs" />
+    <Compile Include="EntityFramework\ThongTinSanPham.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
