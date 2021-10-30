@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 
-namespace Models
+namespace Models.EntityFramework
 {
     public partial class ClientServerDbContext : DbContext
     {
@@ -12,6 +12,7 @@ namespace Models
         {
         }
 
+        public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<DanhMucCongNhanThucHienKhoan> DanhMucCongNhanThucHienKhoans { get; set; }
         public virtual DbSet<DanhMucCongViec> DanhMucCongViecs { get; set; }
         public virtual DbSet<DanhMucCongViecDaLam> DanhMucCongViecDaLams { get; set; }
@@ -22,6 +23,14 @@ namespace Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Account>()
+                .Property(e => e.UserName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Account>()
+                .Property(e => e.Password)
+                .IsUnicode(false);
+
             modelBuilder.Entity<DanhMucCongViec>()
                 .Property(e => e.DonGia)
                 .HasPrecision(38, 6);

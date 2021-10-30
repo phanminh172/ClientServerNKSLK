@@ -53,15 +53,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityFramework\Account.cs" />
     <Compile Include="EntityFramework\ClientServerDbContext.cs" />
     <Compile Include="EntityFramework\DanhMucCongNhanThucHienKhoan.cs" />
     <Compile Include="EntityFramework\DanhMucCongViec.cs" />
     <Compile Include="EntityFramework\DanhMucCongViecDaLam.cs" />
     <Compile Include="EntityFramework\NhatKiSanLuongKhoan.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EntityFramework\sysdiagram.cs" />
     <Compile Include="EntityFramework\ThongTinCongNhan.cs" />
     <Compile Include="EntityFramework\ThongTinSanPham.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
